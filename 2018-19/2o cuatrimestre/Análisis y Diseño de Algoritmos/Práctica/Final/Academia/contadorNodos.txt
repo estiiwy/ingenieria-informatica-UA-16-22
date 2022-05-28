@@ -1,0 +1,23 @@
+Added => añadimos a la cola
+
+Not Added =>
+	nonfactible => no cumplen las restricciones del problema
+				(caen en 0, o se salen del laberinto)
+	nonpromissing => no pueden mejorar la solucion encontrada hasta el
+					momento (su cota optimista no mejora la mejor
+					solucion encontrada hasta el momento) o
+					han llegado a una casilla tardando mas que otro nodo.
+	discarted => nodos que no tienen hijos.
+
+Explored => la suma de los 3 anteriores
+
+
+// cuando llego a solucion y mejoro la mejor encontrada
+// hasta el momento.
+Best solution updated from a completed node= 0
+
+
+// cada vez que sacas un nodo desde esa posicion
+// hago un voraz, y si ese voraz actualiza el valor
+// de la mejor solucion encontrada hasta el momento.
+Best solution updated from a pessimistic bound= 1

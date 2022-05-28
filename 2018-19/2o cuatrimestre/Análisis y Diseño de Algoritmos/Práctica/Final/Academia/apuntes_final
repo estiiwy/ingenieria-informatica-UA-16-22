@@ -1,0 +1,38 @@
+Qr Creator
+
+
+ulong way -> cantidad de posiciones avanzadas
+
+Guardamos en una matriz la celda desde la que hemos llegado
+
+# Node
+En cada nodo tengo dónde estoy (current), lo que me ha costado llegar (way) y una estimacion por encima de la solución de lo que me va a costar llegar al final (optimisticValue)
+
+# Cota optimista
+Conforme se acerca a la solución, la cota optimista va creciendo
+- La cota optimista del nodo n <= solucion n (cuanto más cercana mejor)
+
+# Pesimista
+Es la voraz desde la posición en la que estamos
+
+#expand
+Coge un nodo y devuleve sus hijos (todas las posibles combinaciones)
+- Creo un hijo
+- Copio el padre
+
+# isFeasible
+Comprueba si los nodos son factibles
+
+# Solution
+Es el peso del nodo
+Para mostrar el camino -> 1) linkedList
+						  2) añadir desde dónde vengo en una matriz
+
+LA MEMORIA VALE MÁS QUE LA PRÁCTICA
+
+!! Cola de prioridad mínima
+
+Criterio de selección de nodo vivo para expandir -- Interesante para memoria
+(El último es bastante bueno)
+
+# Branch and bound
